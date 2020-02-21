@@ -2,12 +2,13 @@ language:node_js
 sudo:false
 
 cache:
-  apt:true
   directories:
-     - node_modules
-node_js : stable
+    - node_modules
+node_js : 
+  - stable
 
 install:
-   - npm install -D
-scripts:true
+  - npm install
+script:
+  - npm run build
    
